@@ -1,0 +1,258 @@
+/* Light Theme (ნაგულისხმევი / დღის რეჟიმი) */
+:root {
+    --primary: #2563eb;
+    --bg-color: #f8fafc;
+    --text-color: #0f172a;
+    --card-bg: #ffffff;
+    --header-bg: #0f172a;
+    --header-text: #ffffff;
+    --text-secondary: #64748b;
+    --border-color: #cbd5e1;
+    --viewer-bg: #f1f5f9;
+}
+
+/* Dark Theme (ღამის რეჟიმი) */
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --card-bg: #1e293b;
+    --header-bg: #020617;
+    --header-text: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --viewer-bg: #1e293b;
+}
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: system-ui, -apple-system, sans-serif; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+body { 
+    background: var(--bg-color); 
+    color: var(--text-color); 
+    line-height: 1.6; 
+}
+
+header { 
+    background: var(--header-bg); 
+    color: var(--header-text); 
+    padding: 1rem 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+header h1 { 
+    font-size: 1.5rem; 
+    color: #60a5fa; 
+}
+
+/* ნავიგაცია და ღილაკების სტილი */
+.nav-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+}
+
+nav { 
+    display: flex; 
+    gap: 0.5rem; 
+}
+
+nav a { 
+    color: var(--header-text); 
+    text-decoration: none; 
+    font-weight: 500; 
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease-in-out;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+nav a:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Theme Switcher Button */
+.theme-toggle {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.theme-toggle:hover { 
+    background: rgba(255, 255, 255, 0.25); 
+}
+
+.hero { 
+    text-align: center; 
+    padding: 4rem 5%; 
+    background: var(--card-bg); 
+    border-bottom: 1px solid var(--border-color); 
+}
+
+.hero h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+}
+
+.hero p { 
+    color: var(--text-secondary); 
+    max-width: 600px; 
+    margin: 0 auto 2rem; 
+}
+
+.section-title { 
+    text-align: center; 
+    margin: 3rem 0 1.5rem; 
+    font-size: 1.8rem; 
+}
+
+/* 3D Viewer Section */
+.viewer-container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 0 5%; 
+}
+
+model-viewer { 
+    width: 100%; 
+    height: 400px; 
+    background-color: var(--viewer-bg); 
+    border-radius: 12px; 
+}
+
+/* Portfolio Grid */
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 2rem; 
+    padding: 0 5%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.card { 
+    background: var(--card-bg); 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+    border: 1px solid var(--border-color); 
+}
+
+.card img { 
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-content { 
+    padding: 1.5rem; 
+}
+
+.card-title { 
+    font-size: 1.2rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.card-text { 
+    color: var(--text-secondary); 
+    font-size: 0.95rem; 
+}
+
+/* Contact & Order Form */
+.form-container { 
+    max-width: 600px; 
+    margin: 3rem auto; 
+    padding: 2rem; 
+    background: var(--card-bg); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+    border: 1px solid var(--border-color); 
+}
+
+.form-container h2 { 
+    text-align: center; 
+    font-size: 1.8rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.form-container p.subtitle { 
+    text-align: center; 
+    color: var(--text-secondary); 
+    margin-bottom: 1.5rem; 
+    font-size: 0.95rem; 
+}
+
+.form-group { 
+    margin-bottom: 1.2rem; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-weight: 500; 
+}
+
+.form-group input, .form-group textarea { 
+    width: 100%; 
+    padding: 0.8rem; 
+    border: 1px solid var(--border-color); 
+    border-radius: 6px; 
+    font-size: 1rem; 
+    background: var(--bg-color); 
+    color: var(--text-color); 
+}
+
+.form-hint { 
+    font-size: 0.85rem; 
+    color: var(--text-secondary); 
+    margin-top: 0.25rem; 
+}
+
+.btn { 
+    background: var(--primary); 
+    color: white; 
+    padding: 0.8rem 1.5rem; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    width: 100%; 
+    font-weight: 600; 
+}
+
+.btn:hover { 
+    background: #1d4ed8; 
+}
+
+footer { 
+    text-align: center; 
+    padding: 2rem; 
+    background: var(--header-bg); 
+    color: var(--text-secondary); 
+    margin-top: 4rem; 
+}
