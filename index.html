@@ -43,6 +43,8 @@
         .form-group { margin-bottom: 1.2rem; }
         .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
         .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        .form-group input[type="file"] { padding: 0.5rem; background: #f8fafc; }
+        .form-hint { font-size: 0.85rem; color: var(--gray); margin-top: 0.25rem; }
         .btn { background: var(--primary); color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; width: 100%; font-weight: 600; }
         .btn:hover { background: #1d4ed8; }
         
@@ -99,10 +101,10 @@
 
     <!-- შეკვეთის ფორმა -->
     <div class="form-container" id="order">
-        <h2 style="text-align: center; margin-bottom: 1.5rem;">გამოაგზავნეთ შეკვეთა ან დაკვიკავშირდეი</h2>
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">გამოაგზავნეთ შეკვეთა</h2>
         
-        <!-- Web3Forms ინტეგრაცია თქვენი Access Key-ით -->
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms ინტეგრაცია (enctype="multipart/form-data" აუცილებელია ფაილების გაგზავნისთვის) -->
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="access_key" value="a1251466-7f35-4c99-876d-ed128c4996cf">
             
             <div class="form-group">
@@ -118,6 +120,12 @@
             <div class="form-group">
                 <label for="phone">ტელეფონის ნომერი</label>
                 <input type="tel" id="phone" name="phone" required placeholder="599 00 00 00">
+            </div>
+
+            <div class="form-group">
+                <label for="file">სურათი / 3D ფაილი / ნახაზი</label>
+                <input type="file" id="file" name="attachment" accept="image/*,.stl,.obj,.glb,.gltf,.pdf,.zip">
+                <div class="form-hint">შეგიძლიათ ატვირთოთ ფოტო, PDF, ZIP ან 3D ფაილი (.stl, .obj, .glb)</div>
             </div>
 
             <div class="form-group">
