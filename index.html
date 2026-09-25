@@ -38,8 +38,10 @@
         .card-title { font-size: 1.2rem; margin-bottom: 0.5rem; }
         .card-text { color: var(--gray); font-size: 0.95rem; }
 
-        /* Order Form */
+        /* Contact & Order Form */
         .form-container { max-width: 600px; margin: 3rem auto; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .form-container h2 { text-align: center; font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .form-container p.subtitle { text-align: center; color: var(--gray); margin-bottom: 1.5rem; font-size: 0.95rem; }
         .form-group { margin-bottom: 1.2rem; }
         .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
         .form-group input, .form-group textarea { width: 100%; padding: 0.8rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
@@ -57,7 +59,7 @@
         <nav>
             <a href="#models">3D მოდელი</a>
             <a href="#portfolio">პორტფოლიო</a>
-            <a href="#order">შეკვეთა</a>
+            <a href="#contact">კონტაქტი / შეკვეთა</a>
         </nav>
     </header>
 
@@ -98,9 +100,10 @@
         </div>
     </div>
 
-    <!-- შეკვეთის ფორმა -->
-    <div class="form-container" id="order">
-        <h2 style="text-align: center; margin-bottom: 1.5rem;">გამოაგზავნეთ შეკვეთა</h2>
+    <!-- საკონტაქტო / შეკვეთის ფორმა -->
+    <div class="form-container" id="contact">
+        <h2>დაგვიკავშირდით / გააკეთეთ შეკვეთა</h2>
+        <p class="subtitle">დატოვეთ შეტყობინება ან შეკვეთის დეტალები და ჩვენ მალევე დაგიკავშირდებით.</p>
         
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="a1251466-7f35-4c99-876d-ed128c4996cf">
@@ -123,15 +126,15 @@
             <div class="form-group">
                 <label for="file_link">ფაილის / 3D მოდელის ბმული (არასავალდებულო)</label>
                 <input type="url" id="file_link" name="file_link" placeholder="https://drive.google.com/... ან WeTransfer ბმული">
-                <div class="form-hint">ჩასვით Google Drive, DropBox ან WeTransfer-ის გაზიარებული ბმული.</div>
+                <div class="form-hint">თუ გაქვთ ნახაზი ან 3D მოდელი, ჩასვით Google Drive, DropBox ან WeTransfer-ის გაზიარებული ბმული.</div>
             </div>
 
             <div class="form-group">
-                <label for="message">შეკვეთის აღწერა / მოთხოვნა</label>
-                <textarea id="message" name="message" rows="4" required placeholder="აღწერეთ რა პროდუქციის ბეჭდვა ან მოდელირება გსურთ..."></textarea>
+                <label for="message">შეტყობინება / შეკვეთის აღწერა</label>
+                <textarea id="message" name="message" rows="4" required placeholder="დაწერეთ თქვენი შეკითხვა, იდეა ან შეკვეთის დეტალები..."></textarea>
             </div>
 
-            <button type="submit" class="btn">შეკვეთის გაგზავნა</button>
+            <button type="submit" class="btn">შეტყობინების გაგზავნა</button>
         </form>
     </div>
 
