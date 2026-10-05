@@ -32,15 +32,11 @@
 }
 
 body { 
-    /* სურათის მისამართი ჩასვით url('')-ში */
     background-image: url('imager/background.jpeg'); 
-    
-    /* სურათის სწორი ზომა და პოზიციონირება */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* სქროლისას ფონი რომ ადგილზე დარჩეს */
-    
+    background-attachment: fixed;
     color: var(--text-color); 
     line-height: 1.6; 
 }
@@ -118,14 +114,10 @@ nav a:active {
 .hero { 
     text-align: center; 
     padding: 6rem 5%; 
-    
-    /* ფონად სურათის დასმა + მუქი გადაფარვა ტექსტის მკაფიოდ გამოჩენისთვის */
     background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75));
-    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
     color: #ffffff;
     border-bottom: 1px solid var(--border-color); 
 }
@@ -146,19 +138,13 @@ nav a:active {
     text-align: center; 
     margin: 3rem auto 1.5rem; 
     font-size: 1.8rem; 
-    color: #ffffff; /* თეთრი ტექსტი */
-    
-    /* ჩარჩო და მკრთალი შავი ფონი */
-    background: rgba(15, 23, 42, 0.65); /* მკრთალი მუქი ფონი */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* ნაზი თეთრი ჩარჩო */
-    border-radius: 12px; /* კუთხეების მომრგვალება */
-    
-    /* ზომები და შიდა დაშორება */
+    color: #ffffff;
+    background: rgba(15, 23, 42, 0.65); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 12px; 
     padding: 0.8rem 1.5rem; 
-    max-width: max-content; /* ჩარჩოს ზომა მოერგება ტექსტის სიგრძეს */
-    
-    /* ეფექტი და ჩრდილი */
-    backdrop-filter: blur(8px); /* ფონის ოდნავ დაბურვა (Glassmorphism ეფექტი) */
+    max-width: max-content; 
+    backdrop-filter: blur(8px); 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -172,12 +158,9 @@ nav a:active {
 model-viewer { 
     width: 100%; 
     height: 400px; 
-    
-    /* კოსმოსის ფონის სურათი */
     background-image: url('https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=1200&q=80');
     background-size: cover;
     background-position: center;
-    
     border-radius: 12px; 
 }
 
@@ -191,14 +174,13 @@ model-viewer {
     margin: 0 auto; 
 }
 
-/* მთლიანი ბარათის სტილი - სრულად გამჭვირვალე ფონი */
 .card { 
-    background: rgba(0, 0, 0, 0.4); /* 40%-ით გამუქებული შავი ფონი */
-    backdrop-filter: blur(6px); /* ფონის ოდნავ დაბურვა ტექსტის უკეთ გამოჩენისთვის */
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(6px); 
     border-radius: 12px; 
     overflow: hidden; 
-    border: 1px solid rgba(255, 255, 255, 0.2); /* ნაზი თეთრი ჩარჩო კონტურისთვის */
-    box-shadow: none; /* ჩრდილის გათიშვა */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: none; 
 }
 
 .card img { 
@@ -207,24 +189,21 @@ model-viewer {
     object-fit: cover; 
 }
 
-/* ბარათის შიდა კონტეინერი */
 .card-content { 
     padding: 1.5rem; 
-    background: transparent; /* ტექსტის უკანა ფონის გამჭვირვალობა */
+    background: transparent; 
 }
 
-/* სათაური - თეთრი ფერი */
 .card-title { 
     font-size: 1.2rem; 
     margin-bottom: 0.5rem; 
-    color: #ffffff; /* კაშკაშა თეთრი */
+    color: #ffffff; 
 }
 
-/* ძირითადი ტექსტი - თეთრი / ღია ფერი */
 .card-text { 
-    color: #f8fafc; /* მკაფიო თეთრი ტექსტი */
+    color: #f8fafc; 
     font-size: 0.95rem;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* მუქი ჩრდილი ტექსტის უკან */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); 
 }
 
 /* Contact & Order Form */
@@ -232,11 +211,11 @@ model-viewer {
     max-width: 600px; 
     margin: 3rem auto; 
     padding: 2.5rem 2rem; 
-    background: rgba(0, 0, 0, 0.4); /* 40%-ით გამუქებული შავი ფონი */
-    backdrop-filter: blur(8px); /* ფონის ოდნავ დაბურვა ტექსტის გამოკვეთისთვის */
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(8px); 
     border-radius: 12px; 
-    border: 1px solid rgba(255, 255, 255, 0.15); /* ნაზი თეთრი ჩარჩო */
-    color: #ffffff; /* მთელი შიდა ტექსტი თეთრად */
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    color: #ffffff; 
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -272,13 +251,13 @@ model-viewer {
     border: 1px solid rgba(255, 255, 255, 0.25); 
     border-radius: 6px; 
     font-size: 1rem; 
-    background: rgba(255, 255, 255, 0.1); /* ველების ნახევრად გამჭვირვალე ფონი */
-    color: #ffffff; /* აკრეფილი ტექსტის ფერი */
+    background: rgba(255, 255, 255, 0.1); 
+    color: #ffffff; 
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.6); /* ველის მინიშნების თეთრი მკრთალი ფერი */
+    color: rgba(255, 255, 255, 0.6); 
 }
 
 .form-group input:focus,
@@ -317,4 +296,84 @@ footer {
     background: var(--header-bg); 
     color: var(--text-secondary); 
     margin-top: 4rem; 
+}
+
+/* =========================================================
+   📱 Mobile & Tablet Responsive Styles (მობილურის ადაპტაცია)
+   ========================================================= */
+
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-container {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+    }
+
+    nav a {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3rem 1.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: 1.3rem;
+        padding: 0.6rem 1rem;
+        margin: 2rem auto 1rem;
+        max-width: 90%;
+    }
+
+    /* 3D Model Viewer */
+    model-viewer {
+        height: 300px;
+    }
+
+    /* Portfolio Grid */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 4%;
+    }
+
+    /* Form Container */
+    .form-container {
+        margin: 2rem 4%;
+        padding: 1.5rem 1.2rem;
+    }
+
+    .form-container h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Prevent mobile inputs zoom issue (iOS/Android) */
+    .form-group input, 
+    .form-group textarea {
+        font-size: 16px;
+    }
 }
