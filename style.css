@@ -117,17 +117,27 @@ nav a:active {
 
 .hero { 
     text-align: center; 
-    padding: 6rem 5%; 
+    padding: 3rem 1.5rem; 
     
-    /* ფონად სურათის დასმა + მუქი გადაფარვა ტექსტის მკაფიოდ გამოჩენისთვის */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('images/baner-3dpoint.jpeg');
+    /* ფიქსირებული/მაქსიმალური ზომები */
+    max-width: 923px;
+    height: 324.19px;
+    margin: 0 auto; /* ცენტრში გასასწორებლად */
     
+    /* ფონის სურათი */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('imager/baner-3dpoint.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     
     color: #ffffff;
     border-bottom: 1px solid var(--border-color); 
+    border-radius: 12px; /* სურვილისამებრ, კუთხეების მომრგვალება */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h2 { 
