@@ -144,9 +144,22 @@ nav a:active {
 
 .section-title { 
     text-align: center; 
-    margin: 3rem 0 1.5rem; 
+    margin: 3rem auto 1.5rem; 
     font-size: 1.8rem; 
-    color: #ffffff; /* სათაურის ფერი გახდება თეთრი */
+    color: #ffffff; /* თეთრი ტექსტი */
+    
+    /* ჩარჩო და მკრთალი შავი ფონი */
+    background: rgba(15, 23, 42, 0.65); /* მკრთალი მუქი ფონი */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* ნაზი თეთრი ჩარჩო */
+    border-radius: 12px; /* კუთხეების მომრგვალება */
+    
+    /* ზომები და შიდა დაშორება */
+    padding: 0.8rem 1.5rem; 
+    max-width: max-content; /* ჩარჩოს ზომა მოერგება ტექსტის სიგრძეს */
+    
+    /* ეფექტი და ჩრდილი */
+    backdrop-filter: blur(8px); /* ფონის ოდნავ დაბურვა (Glassmorphism ეფექტი) */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* 3D Viewer Section */
