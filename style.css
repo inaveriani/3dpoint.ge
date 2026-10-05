@@ -186,12 +186,13 @@ model-viewer {
     margin: 0 auto; 
 }
 
+/* მთლიანი ბარათის სტილი - სრულად გამჭვირვალე ფონი */
 .card { 
-    background: var(--card-bg); 
+    background: transparent; /* გამჭვირვალე ფონი */
     border-radius: 12px; 
     overflow: hidden; 
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
-    border: 1px solid var(--border-color); 
+    border: 1px solid rgba(255, 255, 255, 0.2); /* ნაზი თეთრი ჩარჩო კონტურისთვის */
+    box-shadow: none; /* ჩრდილის გათიშვა */
 }
 
 .card img { 
@@ -200,22 +201,22 @@ model-viewer {
     object-fit: cover; 
 }
 
-/* ბარათის შიდა შიგთავსის კონტეინერი */
+/* ბარათის შიდა კონტეინერი */
 .card-content { 
     padding: 1.5rem; 
-    background: transparent; /* სრულად გამჭვირვალე ფონი */
+    background: transparent; /* ტექსტის უკანა ფონის გამჭვირვალობა */
 }
 
-/* ბარათის სათაური */
+/* სათაური - თეთრი ფერი */
 .card-title { 
     font-size: 1.2rem; 
     margin-bottom: 0.5rem; 
-    color: #ffffff; /* თეთრი ტექსტი */
+    color: #ffffff; /* კაშკაშა თეთრი */
 }
 
-/* ბარათის აღწერა/ტექსტი */
+/* ძირითადი ტექსტი - თეთრი / ღია ფერი */
 .card-text { 
-    color: #e2e8f0; /* ღია თეთრი/რუხი ტექსტი */
+    color: #f8fafc; /* მკაფიო თეთრი ტექსტი */
     font-size: 0.95rem; 
 }
 
