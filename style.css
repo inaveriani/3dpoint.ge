@@ -200,17 +200,23 @@ model-viewer {
     object-fit: cover; 
 }
 
+/* ბარათის შიდა შიგთავსის კონტეინერი */
 .card-content { 
     padding: 1.5rem; 
+    background: rgba(15, 23, 42, 0.75); /* მკრთალი შავი/მუქი ფონი */
+    backdrop-filter: blur(8px); /* ფონის ოდნავ დაბურვა (Glassmorphism ეფექტი) */
 }
 
+/* ბარათის სათაური */
 .card-title { 
     font-size: 1.2rem; 
     margin-bottom: 0.5rem; 
+    color: #ffffff; /* თეთრი ტექსტი */
 }
 
+/* ბარათის აღწერა/ტექსტი */
 .card-text { 
-    color: var(--text-secondary); 
+    color: #e2e8f0; /* მკაფიო, ღია თეთრი/რუხი ტექსტი */
     font-size: 0.95rem; 
 }
 
