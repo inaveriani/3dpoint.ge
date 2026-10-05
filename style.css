@@ -203,8 +203,7 @@ model-viewer {
 /* ბარათის შიდა შიგთავსის კონტეინერი */
 .card-content { 
     padding: 1.5rem; 
-    background: rgba(15, 23, 42, 0.75); /* მკრთალი შავი/მუქი ფონი */
-    backdrop-filter: blur(8px); /* ფონის ოდნავ დაბურვა (Glassmorphism ეფექტი) */
+    background: transparent; /* სრულად გამჭვირვალე ფონი */
 }
 
 /* ბარათის სათაური */
@@ -216,7 +215,7 @@ model-viewer {
 
 /* ბარათის აღწერა/ტექსტი */
 .card-text { 
-    color: #e2e8f0; /* მკაფიო, ღია თეთრი/რუხი ტექსტი */
+    color: #e2e8f0; /* ღია თეთრი/რუხი ტექსტი */
     font-size: 0.95rem; 
 }
 
