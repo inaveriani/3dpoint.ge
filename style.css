@@ -231,22 +231,25 @@ model-viewer {
 .form-container { 
     max-width: 600px; 
     margin: 3rem auto; 
-    padding: 2rem; 
-    background: var(--card-bg); 
+    padding: 2.5rem 2rem; 
+    background: rgba(0, 0, 0, 0.4); /* 40%-ით გამუქებული შავი ფონი */
+    backdrop-filter: blur(8px); /* ფონის ოდნავ დაბურვა ტექსტის გამოკვეთისთვის */
     border-radius: 12px; 
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
-    border: 1px solid var(--border-color); 
+    border: 1px solid rgba(255, 255, 255, 0.15); /* ნაზი თეთრი ჩარჩო */
+    color: #ffffff; /* მთელი შიდა ტექსტი თეთრად */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .form-container h2 { 
     text-align: center; 
     font-size: 1.8rem; 
     margin-bottom: 0.5rem; 
+    color: #ffffff;
 }
 
 .form-container p.subtitle { 
     text-align: center; 
-    color: var(--text-secondary); 
+    color: #e2e8f0; 
     margin-bottom: 1.5rem; 
     font-size: 0.95rem; 
 }
@@ -259,22 +262,36 @@ model-viewer {
     display: block; 
     margin-bottom: 0.5rem; 
     font-weight: 500; 
+    color: #ffffff;
 }
 
-.form-group input, .form-group textarea { 
+.form-group input, 
+.form-group textarea { 
     width: 100%; 
     padding: 0.8rem; 
-    border: 1px solid var(--border-color); 
+    border: 1px solid rgba(255, 255, 255, 0.25); 
     border-radius: 6px; 
     font-size: 1rem; 
-    background: var(--bg-color); 
-    color: var(--text-color); 
+    background: rgba(255, 255, 255, 0.1); /* ველების ნახევრად გამჭვირვალე ფონი */
+    color: #ffffff; /* აკრეფილი ტექსტის ფერი */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* ველის მინიშნების თეთრი მკრთალი ფერი */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.18);
 }
 
 .form-hint { 
     font-size: 0.85rem; 
-    color: var(--text-secondary); 
-    margin-top: 0.25rem; 
+    color: #cbd5e1; 
+    margin-top: 0.3rem; 
 }
 
 .btn { 
@@ -287,6 +304,7 @@ model-viewer {
     cursor: pointer; 
     width: 100%; 
     font-weight: 600; 
+    transition: background 0.2s ease-in-out;
 }
 
 .btn:hover { 
