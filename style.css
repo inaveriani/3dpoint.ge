@@ -146,6 +146,7 @@ nav a:active {
     text-align: center; 
     margin: 3rem 0 1.5rem; 
     font-size: 1.8rem; 
+    color: #ffffff; /* სათაურის ფერი გახდება თეთრი */
 }
 
 /* 3D Viewer Section */
