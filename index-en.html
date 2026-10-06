@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Point - 3D Printing & Design</title>
+    <!-- Google Model Viewer for 3D Models -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>3D Point</h1>
+        <div class="nav-container">
+            <nav>
+                <a href="#models">3D Model</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!-- Language Switcher (Links back to Georgian version) -->
+            <div class="lang-switch">
+                <a href="index.html" class="lang-btn">GE</a>
+                <span>|</span>
+                <a href="index-en.html" class="lang-btn active">EN</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>3D Printing & Modeling</h2>
+        <p>Get high-quality 3D products, custom parts, and individual orders delivered fast.</p>
+    </section>
+
+    <!-- Interactive 3D Model Viewer -->
+    <h2 class="section-title" id="models">Interactive 3D Model</h2>
+    <div class="viewer-container">
+        <model-viewer 
+            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+            alt="3D Product" 
+            auto-rotate 
+            camera-controls 
+            ar>
+        </model-viewer>
+    </div>
+
+    <!-- Portfolio / Works -->
+    <h2 class="section-title" id="portfolio">Our Works</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="imager/parts_for cars.jpeg" alt="Car Parts">
+            <div class="card-content">
+                <h3 class="card-title">Parts & Spare Components</h3>
+                <p class="card-text">High-durability plastic parts for automotive and mechanical applications.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imager/your_design.jpeg" alt="Your design">
+            <div class="card-content">
+                <h3 class="card-title">Custom Design</h3>
+                <p class="card-text">Prototyping and custom manufacturing based on your drawings or ideas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact / Order Form -->
+    <div class="form-container" id="contact">
+        <h2>Contact Us / Place an Order</h2>
+        <p class="subtitle">Leave a message or order details and we will get back to you shortly.</p>
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a1251466-7f35-4c99-876d-ed128c4996cf">
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+995 599 00 00 00">
+            </div>
+
+            <div class="form-group">
+                <label for="file_link">File / 3D Model Link (Optional)</label>
+                <input type="url" id="file_link" name="file_link" placeholder="https://drive.google.com/... or WeTransfer link">
+                <div class="form-hint">If you have a drawing or 3D model, paste a shared link from Google Drive, DropBox, or WeTransfer.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message / Order Description</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Describe your request, idea, or order details..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 3D Point. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
