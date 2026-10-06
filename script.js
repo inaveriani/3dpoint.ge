@@ -1,26 +1,10 @@
-// Day/Night თემის გადამრთველი
 const toggleBtn = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
-// შენახული თემის შემოწმება localStorage-იდან
-const currentTheme = localStorage.getItem('theme');
+// დარწმუნება, რომ საიტი მუდამ ნათელ რეჟიმშია
+document.documentElement.removeAttribute('data-theme');
+localStorage.removeItem('theme');
 
-if (currentTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    themeIcon.textContent = '☀️';
-}
-
-// ღილაკზე დაჭერისას თემის შეცვლის ლოგიკა
-toggleBtn.addEventListener('click', () => {
-    let theme = document.documentElement.getAttribute('data-theme');
-    
-    if (theme === 'dark') {
-        document.documentElement.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-        themeIcon.textContent = '🌙';
-    } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        themeIcon.textContent = '☀️';
-    }
-});
+// თუ ღილაკი ან იკონკა ჯერ კიდევ არსებობს DOM-ში, შეგვიძლია დავმალოთ ან გავასუფთაოთ
+if (themeIcon) themeIcon.textContent = '';
+if (toggleBtn) toggleBtn.style.display = 'none';
