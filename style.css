@@ -617,4 +617,38 @@ footer a { color: #93c5fd; text-decoration: none; }
     line-height: 1;
     cursor: pointer;
 }
+/* კომპაქტური ჰედერი მობილურზე: დაამატე style.css-ის ბოლოს */
+@media (max-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "logo lang"
+            "nav  nav";
+        align-items: center;
+        gap: 0.6rem 1rem;
+        padding: 0.7rem 4%;
+        text-align: left;
+    }
 
+    /* კონტეინერი "ქრება", რომ ლოგო, ენა და მენიუ ერთ ბადეში მოხვდეს */
+    .nav-container { display: contents; }
+
+    .logo { grid-area: logo; font-size: 1.25rem; }
+    .lang-switch { grid-area: lang; }
+
+    nav {
+        grid-area: nav;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        gap: 0.4rem;
+    }
+    nav a {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 0.45rem 0.5rem;
+        font-size: 0.82rem;
+        white-space: nowrap;
+    }
+}
