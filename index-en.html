@@ -36,7 +36,6 @@
     }
     </script>
 
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -61,7 +60,7 @@
         <h1>3D Printing & Modeling in Tbilisi</h1>
         <p>Print a part, prototype or toy from your drawing or idea. We work with individuals, businesses and workshops.</p>
         <div class="hero-actions">
-            <a href="#contact" class="btn-link btn-primary">Get a quote</a>
+            <a href="#quote" class="btn-link btn-primary">Get a quote</a>
             <a href="https://wa.me/995550501541" class="btn-link btn-ghost" target="_blank" rel="noopener">Message us on WhatsApp</a>
         </div>
     </section>
@@ -82,16 +81,6 @@
         <div><h3>ASA</h3><p>Resistant to sun and weather. Outdoor parts.</p></div>
     </div>
 
-    <h2 class="section-title" id="models">Interactive 3D Model</h2>
-    <div class="viewer-container">
-        <model-viewer
-            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-            alt="3D model example"
-            auto-rotate
-            camera-controls
-            ar>
-        </model-viewer>
-    </div>
 
     <h2 class="section-title" id="portfolio">Our Work</h2>
     <div class="grid">
@@ -131,7 +120,7 @@
 
     </div>
 
-    <section class="contact-info" aria-label="Contact information">
+    <section class="contact-info" id="contact" aria-label="Contact information">
         <h2>Contact us directly</h2>
         <ul>
             <li><strong>Phone / WhatsApp</strong><a href="tel:+995550501541">+995 550 501 541</a></li>
@@ -142,7 +131,7 @@
         </ul>
     </section>
 
-    <div class="form-container" id="contact">
+    <div class="form-container" id="quote">
         <h2>Get a quote</h2>
         <p class="subtitle">Tell us what you need and we will send you a price and timeline shortly.</p>
 
