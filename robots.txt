@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks.html
+Disallow: /thanks-en.html
+
+Sitemap: https://www.3dpoint.ge/sitemap.xml
