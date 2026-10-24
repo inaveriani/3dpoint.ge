@@ -563,3 +563,20 @@ footer a { color: #93c5fd; text-decoration: none; }
     body { padding-bottom: 3.4rem; }
     .contact-info { margin: 2rem 4% 0; padding: 1.4rem 1.2rem; }
 }
+/* პროდუქტის ბარათი: დაამატე style.css-ის ბოლოს */
+.tag {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.15rem 0.6rem;
+    border: 1px solid rgba(147, 197, 253, 0.6);
+    border-radius: 999px;
+    color: #93c5fd;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.btn-sm {
+    margin-top: 1rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.9rem;
+}
+
