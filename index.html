@@ -3,24 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Point - 3D ბეჭდვა და დიზაინი</title>
+    <title>3D Point – 3D ბეჭდვა და მოდელირება თბილისში</title>
+    <meta name="description" content="3D ბეჭდვა, პროტოტიპირება და ინდივიდუალური შეკვეთები თბილისში. ავტონაწილები, საბავშვო სათამაშოები და სამრეწველო დეტალები. მიიღეთ შეთავაზება დღესვე.">
+    <link rel="canonical" href="https://www.3dpoint.ge/">
+    <link rel="alternate" hreflang="ka" href="https://www.3dpoint.ge/">
+    <link rel="alternate" hreflang="en" href="https://www.3dpoint.ge/index-en.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="3D Point – 3D ბეჭდვა და მოდელირება">
+    <meta property="og:description" content="ინდივიდუალური 3D ბეჭდვა, პროტოტიპები და სათადარიგო ნაწილები თბილისში.">
+    <meta property="og:url" content="https://www.3dpoint.ge/">
+    <meta property="og:image" content="https://www.3dpoint.ge/imager/baner-3dpoint.jpeg">
+    <meta property="og:locale" content="ka_GE">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "3D Point",
+      "url": "https://www.3dpoint.ge/",
+      "telephone": "+995550501541",
+      "email": "3dpointge@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Abel Enukidze St 11",
+        "addressLocality": "Tbilisi",
+        "postalCode": "0182",
+        "addressCountry": "GE"
+      },
+      "openingHours": "Mo-Su 12:00-22:00",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61595278062583"]
+    }
+    </script>
+
     <!-- Google Model Viewer 3D მოდელების საჩვენებლად -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
-    <!-- CSS ფაილის დაკავშირება -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>3D Point</h1>
+        <div class="logo">3D Point</div>
         <div class="nav-container">
             <nav>
-                <a href="#models">3D მოდელი</a>
+                <a href="#how">როგორ ვმუშაობთ</a>
                 <a href="#portfolio">პორტფოლიო</a>
                 <a href="#contact">კონტაქტი</a>
             </nav>
-
-            <!-- ენის გადამრთველი (გადადის ინგლისურ გვერდზე) -->
             <div class="lang-switch">
                 <a href="index.html" class="lang-btn active">GE</a>
                 <span>|</span>
@@ -30,30 +59,47 @@
     </header>
 
     <section class="hero">
-        <h2>3D ბეჭდვა და მოდელირება</h2>
-        <p>მიიღეთ მაღალი ხარისხის 3D პროდუქცია, ნაწილები და ინდივიდუალური შეკვეთები მოკლე ვადებში.</p>
+        <h1>3D ბეჭდვა და მოდელირება თბილისში</h1>
+        <p>დაბეჭდეთ ნაწილი, პროტოტიპი ან სათამაშო თქვენი ნახაზით ან იდეით. ვმუშაობთ როგორც ფიზიკურ პირებთან, ისე ბიზნესებთან და სახელოსნოებთან.</p>
+        <div class="hero-actions">
+            <a href="#contact" class="btn-link btn-primary">მიიღე შეთავაზება</a>
+            <a href="https://wa.me/995550501541" class="btn-link btn-ghost" target="_blank" rel="noopener">მოგვწერე WhatsApp-ზე</a>
+        </div>
     </section>
 
-    <!-- 3D მოდელის ინტერაქტიული მნახველი -->
+    <h2 class="section-title" id="how">როგორ ვმუშაობთ</h2>
+    <ol class="steps">
+        <li><h3>გამოგვიგზავნეთ მოდელი ან იდეა</h3><p>ფაილი, ნახაზი, ფოტო ან უბრალოდ აღწერა.</p></li>
+        <li><h3>დაგიდასახელებთ ფასსა და ვადას</h3><p>ზომის, მასალისა და რაოდენობის მიხედვით.</p></li>
+        <li><h3>ვბეჭდავთ</h3><p>საჭიროების შემთხვევაში წინასწარ ვამზადებთ ან ვასწორებთ მოდელს.</p></li>
+        <li><h3>იღებთ მზა ნაწარმს</h3><p>მოდით სტუდიაში ან შეათანხმეთ მიწოდება.</p></li>
+    </ol>
+
+    <h2 class="section-title">მასალები</h2>
+    <div class="materials">
+        <div><h3>PLA</h3><p>ეკოლოგიური, დეტალური. სათამაშოები, ფიგურები, დეკორი.</p></div>
+        <div><h3>PETG</h3><p>გამძლე და ტენგამძლე. ფუნქციური ნაწილები.</p></div>
+        <div><h3>ABS</h3><p>მდგრადია სითბოს მიმართ. ავტომობილის სალონის დეტალები.</p></div>
+        <div><h3>Nylon</h3><p>მაღალი სიმტკიცე და ცვეთამედეგობა. კბილანები, სახსრები.</p></div>
+    </div>
+
     <h2 class="section-title" id="models">ინტერაქტიული 3D მოდელი</h2>
     <div class="viewer-container">
-        <model-viewer 
-            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
-            alt="3D პროდუქტი" 
-            auto-rotate 
-            camera-controls 
+        <model-viewer
+            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+            alt="3D მოდელის მაგალითი"
+            auto-rotate
+            camera-controls
             ar>
         </model-viewer>
     </div>
 
-    <!-- პორტფოლიო / ნამუშევრების კატეგორიები -->
     <h2 class="section-title" id="portfolio">ნამუშევრების კატეგორიები</h2>
     <div class="grid">
-        
-        <!-- კატეგორია 1: დეტალები და ნაწილები -->
+
         <a href="parts.html" class="card-link">
             <div class="card">
-                <img src="imager/parts_for cars.jpeg" alt="Car Parts">
+                <img src="imager/parts_for cars.jpeg" alt="3D დაბეჭდილი ავტონაწილები" loading="lazy">
                 <div class="card-content">
                     <h3 class="card-title">დეტალები და სათადარიგო ნაწილები</h3>
                     <p class="card-text">მაღალი სიმტკიცის პლასტმასისგან დამზადებული ავტო და ტექნიკის ნაწილები.</p>
@@ -62,10 +108,9 @@
             </div>
         </a>
 
-        <!-- კატეგორია 2: სათამაშოები და საბავშვო -->
         <a href="toys.html" class="card-link">
             <div class="card">
-                <img src="imager/your_design.jpeg" alt="Toys Section">
+                <img src="imager/your_design.jpeg" alt="3D დაბეჭდილი სათამაშოები" loading="lazy">
                 <div class="card-content">
                     <h3 class="card-title">სათამაშოები და საბავშვო განყოფილება</h3>
                     <p class="card-text">3D დაბეჭდილი ეკოლოგიურად სუფთა სათამაშოები, ფიგურები და დეკორაციები.</p>
@@ -74,10 +119,9 @@
             </div>
         </a>
 
-        <!-- კატეგორია 3: ინდივიდუალური დიზაინი -->
         <a href="custom-design.html" class="card-link">
             <div class="card">
-                <img src="imager/your_design.jpeg" alt="Your design">
+                <img src="imager/your_design.jpeg" alt="ინდივიდუალური დიზაინი და პროტოტიპები" loading="lazy">
                 <div class="card-content">
                     <h3 class="card-title">ინდივიდუალური დიზაინი</h3>
                     <p class="card-text">პროტოტიპების დამზადება თქვენი ნახაზისა თუ იდეის მიხედვით.</p>
@@ -88,15 +132,26 @@
 
     </div>
 
-    <!-- საკონტაქტო / შეკვეთის ფორმა -->
+    <section class="contact-info" aria-label="საკონტაქტო ინფორმაცია">
+        <h2>დაგვიკავშირდით პირდაპირ</h2>
+        <ul>
+            <li><strong>ტელეფონი / WhatsApp</strong><a href="tel:+995550501541">+995 550 501 541</a></li>
+            <li><strong>ელ-ფოსტა</strong><a href="mailto:3dpointge@gmail.com">3dpointge@gmail.com</a></li>
+            <li><strong>მისამართი</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=11+Abel+Enukidze+St+Tbilisi" target="_blank" rel="noopener">აბელ ენუქიძის ქ. 11, თბილისი 0182</a></li>
+            <li><strong>სამუშაო საათები</strong><span>ყოველდღე 12:00–22:00</span></li>
+            <li><strong>Facebook</strong><a href="https://www.facebook.com/profile.php?id=61595278062583" target="_blank" rel="noopener">3D Point-ის გვერდი</a></li>
+        </ul>
+    </section>
+
     <div class="form-container" id="contact">
-        <h2>დაგვიკავშირდით / გააკეთეთ შეკვეთა</h2>
-        <p class="subtitle">დატოვეთ შეტყობინება ან შეკვეთის დეტალები და ჩვენ მალევე დაგიკავშირდებით.</p>
-        
+        <h2>მიიღეთ შეთავაზება</h2>
+        <p class="subtitle">აღწერეთ რა გჭირდებათ და ფასსა და ვადას მალევე გამოგიგზავნით.</p>
+
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="a1251466-7f35-4c99-876d-ed128c4996cf">
             <input type="hidden" name="redirect" value="https://www.3dpoint.ge/thanks.html">
-            
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
             <div class="form-group">
                 <label for="name">სახელი, გვარი</label>
                 <input type="text" id="name" name="name" required placeholder="გიორგი გიორგაძე">
@@ -113,25 +168,42 @@
             </div>
 
             <div class="form-group">
+                <label for="service">რა გჭირდებათ?</label>
+                <select id="service" name="service">
+                    <option>ნაწილის ან დეტალის დაბეჭდვა</option>
+                    <option>პროტოტიპი</option>
+                    <option>სათამაშო ან ფიგურა</option>
+                    <option>მოდელირება / დიზაინი ნულიდან</option>
+                    <option>პარტიული წარმოება (ბიზნესისთვის)</option>
+                    <option>სხვა</option>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="file_link">ფაილის / 3D მოდელის ბმული (არასავალდებულო)</label>
                 <input type="url" id="file_link" name="file_link" placeholder="https://drive.google.com/... ან WeTransfer ბმული">
                 <div class="form-hint">თუ გაქვთ ნახაზი ან 3D მოდელი, ჩასვით Google Drive, DropBox ან WeTransfer-ის გაზიარებული ბმული.</div>
             </div>
 
             <div class="form-group">
-                <label for="message">შეტყობინება / შეკვეთის აღწერა</label>
-                <textarea id="message" name="message" rows="4" required placeholder="დაწერეთ თქვენი შეკითხვა, იდეა ან შეკვეთის დეტალები..."></textarea>
+                <label for="message">აღწერა (ზომა, მასალა, რაოდენობა, ვადა)</label>
+                <textarea id="message" name="message" rows="4" required placeholder="მაგ.: 10 ცალი სამაგრი, PETG, დაახლოებით 5x3 სმ, საჭიროა 1 კვირაში"></textarea>
             </div>
 
-            <button type="submit" class="btn">შეტყობინების გაგზავნა</button>
+            <button type="submit" class="btn">გაგზავნა</button>
         </form>
     </div>
 
     <footer>
+        <p>3D Point · აბელ ენუქიძის ქ. 11, თბილისი · <a href="tel:+995550501541">+995 550 501 541</a></p>
         <p>&copy; 2026 3D Point. ყველა უფლება დაცულია.</p>
     </footer>
 
-    <!-- JavaScript ფაილის დაკავშირება -->
-    <script src="script.js"></script>
+    <!-- მობილურის მუდმივი საკონტაქტო ღილაკები -->
+    <div class="contact-bar">
+        <a href="tel:+995550501541">დარეკვა</a>
+        <a href="https://wa.me/995550501541" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+
 </body>
 </html>
